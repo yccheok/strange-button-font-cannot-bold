@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		0D720B0526F8E5ED00B0D118 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		0D915E0526AFF1FE009892F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0D915E0726AFF202009892F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0DE90EC925AEE239008A8E3B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		0DF2D0CF25AEA5B000126B97 /* wenote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wenote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DF2D0D225AEA5B000126B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -320,7 +319,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0D915E0526AFF1FE009892F5 /* en */,
-				0D915E0726AFF202009892F5 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
