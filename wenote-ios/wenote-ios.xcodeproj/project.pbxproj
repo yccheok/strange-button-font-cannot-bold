@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D720B0626F8E5ED00B0D118 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D720B0526F8E5ED00B0D118 /* UtilsTests.swift */; };
+		0D915E0426AFF1FE009892F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D915E0626AFF1FE009892F5 /* InfoPlist.strings */; };
+		0DF2D0D325AEA5B000126B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2D0D225AEA5B000126B97 /* AppDelegate.swift */; };
+		0DF2D0D525AEA5B000126B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2D0D425AEA5B000126B97 /* SceneDelegate.swift */; };
+		0DF2D0DA25AEA5B000126B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF2D0D825AEA5B000126B97 /* Main.storyboard */; };
+		0DF2D0DC25AEA5B300126B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF2D0DB25AEA5B300126B97 /* Assets.xcassets */; };
+		0DF2D0DF25AEA5B300126B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF2D0DD25AEA5B300126B97 /* LaunchScreen.storyboard */; };
+		0DF2D0EA25AEA5B300126B97 /* wenote_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2D0E925AEA5B300126B97 /* wenote_iosTests.swift */; };
+		0DF2D0F525AEA5B300126B97 /* wenote_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2D0F425AEA5B300126B97 /* wenote_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0DF2D0E625AEA5B300126B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DF2D0C725AEA5B000126B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DF2D0CE25AEA5B000126B97;
+			remoteInfo = "wenote-ios";
+		};
+		0DF2D0F125AEA5B300126B97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0DF2D0C725AEA5B000126B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DF2D0CE25AEA5B000126B97;
+			remoteInfo = "wenote-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D720B0526F8E5ED00B0D118 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		0D915E0526AFF1FE009892F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D915E0726AFF202009892F5 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0DE90EC925AEE239008A8E3B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		0DF2D0CF25AEA5B000126B97 /* wenote-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wenote-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF2D0D225AEA5B000126B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0DF2D0D425AEA5B000126B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0DF2D0D925AEA5B000126B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DF2D0DB25AEA5B300126B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DF2D0DE25AEA5B300126B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0DF2D0E025AEA5B300126B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF2D0E525AEA5B300126B97 /* wenote-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wenote-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF2D0E925AEA5B300126B97 /* wenote_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenote_iosTests.swift; sourceTree = "<group>"; };
+		0DF2D0EB25AEA5B300126B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF2D0F025AEA5B300126B97 /* wenote-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wenote-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF2D0F425AEA5B300126B97 /* wenote_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wenote_iosUITests.swift; sourceTree = "<group>"; };
+		0DF2D0F625AEA5B300126B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DF2D0CC25AEA5B000126B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0E225AEA5B300126B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0ED25AEA5B300126B97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC65273280DC1E900471AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DF2D0C625AEA5B000126B97 = {
+			isa = PBXGroup;
+			children = (
+				0DF2D0D125AEA5B000126B97 /* wenote-ios */,
+				0DF2D0E825AEA5B300126B97 /* wenote-iosTests */,
+				0DF2D0F325AEA5B300126B97 /* wenote-iosUITests */,
+				0DF2D0D025AEA5B000126B97 /* Products */,
+				0DC65273280DC1E900471AF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0DF2D0D025AEA5B000126B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2D0CF25AEA5B000126B97 /* wenote-ios.app */,
+				0DF2D0E525AEA5B300126B97 /* wenote-iosTests.xctest */,
+				0DF2D0F025AEA5B300126B97 /* wenote-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DF2D0D125AEA5B000126B97 /* wenote-ios */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2D0E025AEA5B300126B97 /* Info.plist */,
+				0DF2D0D225AEA5B000126B97 /* AppDelegate.swift */,
+				0DF2D0D425AEA5B000126B97 /* SceneDelegate.swift */,
+				0DF2D0DB25AEA5B300126B97 /* Assets.xcassets */,
+				0D915E0626AFF1FE009892F5 /* InfoPlist.strings */,
+				0DF2D0DD25AEA5B300126B97 /* LaunchScreen.storyboard */,
+				0DF2D0D825AEA5B000126B97 /* Main.storyboard */,
+			);
+			path = "wenote-ios";
+			sourceTree = "<group>";
+		};
+		0DF2D0E825AEA5B300126B97 /* wenote-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2D0E925AEA5B300126B97 /* wenote_iosTests.swift */,
+				0DF2D0EB25AEA5B300126B97 /* Info.plist */,
+				0D720B0526F8E5ED00B0D118 /* UtilsTests.swift */,
+			);
+			path = "wenote-iosTests";
+			sourceTree = "<group>";
+		};
+		0DF2D0F325AEA5B300126B97 /* wenote-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0DF2D0F425AEA5B300126B97 /* wenote_iosUITests.swift */,
+				0DF2D0F625AEA5B300126B97 /* Info.plist */,
+			);
+			path = "wenote-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DF2D0CE25AEA5B000126B97 /* wenote-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DF2D0F925AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-ios" */;
+			buildPhases = (
+				0DF2D0CB25AEA5B000126B97 /* Sources */,
+				0DF2D0CC25AEA5B000126B97 /* Frameworks */,
+				0DF2D0CD25AEA5B000126B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wenote-ios";
+			packageProductDependencies = (
+			);
+			productName = "wenote-ios";
+			productReference = 0DF2D0CF25AEA5B000126B97 /* wenote-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0DF2D0E425AEA5B300126B97 /* wenote-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DF2D0FC25AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-iosTests" */;
+			buildPhases = (
+				0DF2D0E125AEA5B300126B97 /* Sources */,
+				0DF2D0E225AEA5B300126B97 /* Frameworks */,
+				0DF2D0E325AEA5B300126B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DF2D0E725AEA5B300126B97 /* PBXTargetDependency */,
+			);
+			name = "wenote-iosTests";
+			productName = "wenote-iosTests";
+			productReference = 0DF2D0E525AEA5B300126B97 /* wenote-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0DF2D0EF25AEA5B300126B97 /* wenote-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DF2D0FF25AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-iosUITests" */;
+			buildPhases = (
+				0DF2D0EC25AEA5B300126B97 /* Sources */,
+				0DF2D0ED25AEA5B300126B97 /* Frameworks */,
+				0DF2D0EE25AEA5B300126B97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0DF2D0F225AEA5B300126B97 /* PBXTargetDependency */,
+			);
+			name = "wenote-iosUITests";
+			productName = "wenote-iosUITests";
+			productReference = 0DF2D0F025AEA5B300126B97 /* wenote-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DF2D0C725AEA5B000126B97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0DF2D0CE25AEA5B000126B97 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1300;
+					};
+					0DF2D0E425AEA5B300126B97 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0DF2D0CE25AEA5B000126B97;
+					};
+					0DF2D0EF25AEA5B300126B97 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0DF2D0CE25AEA5B000126B97;
+					};
+				};
+			};
+			buildConfigurationList = 0DF2D0CA25AEA5B000126B97 /* Build configuration list for PBXProject "wenote-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hant",
+			);
+			mainGroup = 0DF2D0C625AEA5B000126B97;
+			packageReferences = (
+			);
+			productRefGroup = 0DF2D0D025AEA5B000126B97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DF2D0CE25AEA5B000126B97 /* wenote-ios */,
+				0DF2D0E425AEA5B300126B97 /* wenote-iosTests */,
+				0DF2D0EF25AEA5B300126B97 /* wenote-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DF2D0CD25AEA5B000126B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF2D0DF25AEA5B300126B97 /* LaunchScreen.storyboard in Resources */,
+				0DF2D0DC25AEA5B300126B97 /* Assets.xcassets in Resources */,
+				0DF2D0DA25AEA5B000126B97 /* Main.storyboard in Resources */,
+				0D915E0426AFF1FE009892F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0E325AEA5B300126B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0EE25AEA5B300126B97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DF2D0CB25AEA5B000126B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF2D0D325AEA5B000126B97 /* AppDelegate.swift in Sources */,
+				0DF2D0D525AEA5B000126B97 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0E125AEA5B300126B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D720B0626F8E5ED00B0D118 /* UtilsTests.swift in Sources */,
+				0DF2D0EA25AEA5B300126B97 /* wenote_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DF2D0EC25AEA5B300126B97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF2D0F525AEA5B300126B97 /* wenote_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0DF2D0E725AEA5B300126B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DF2D0CE25AEA5B000126B97 /* wenote-ios */;
+			targetProxy = 0DF2D0E625AEA5B300126B97 /* PBXContainerItemProxy */;
+		};
+		0DF2D0F225AEA5B300126B97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DF2D0CE25AEA5B000126B97 /* wenote-ios */;
+			targetProxy = 0DF2D0F125AEA5B300126B97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D915E0626AFF1FE009892F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D915E0526AFF1FE009892F5 /* en */,
+				0D915E0726AFF202009892F5 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0DF2D0D825AEA5B000126B97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DF2D0D925AEA5B000126B97 /* Base */,
+				0DE90EC925AEE239008A8E3B /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DF2D0DD25AEA5B300126B97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DF2D0DE25AEA5B300126B97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DF2D0F725AEA5B300126B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Debug;
+		};
+		0DF2D0F825AEA5B300126B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DF2D0FA25AEA5B300126B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yocto.wenote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0DF2D0FB25AEA5B300126B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yocto.wenote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0DF2D0FD25AEA5B300126B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yocto.wenote.wenote-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenote-ios.app/wenote-ios";
+			};
+			name = Debug;
+		};
+		0DF2D0FE25AEA5B300126B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yocto.wenote.wenote-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wenote-ios.app/wenote-ios";
+			};
+			name = Release;
+		};
+		0DF2D10025AEA5B300126B97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yocto.wenote.wenote-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wenote-ios";
+			};
+			name = Debug;
+		};
+		0DF2D10125AEA5B300126B97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54MSZCLWU7;
+				INFOPLIST_FILE = "wenote-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yocto.wenote.wenote-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wenote-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DF2D0CA25AEA5B000126B97 /* Build configuration list for PBXProject "wenote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF2D0F725AEA5B300126B97 /* Debug */,
+				0DF2D0F825AEA5B300126B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DF2D0F925AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF2D0FA25AEA5B300126B97 /* Debug */,
+				0DF2D0FB25AEA5B300126B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DF2D0FC25AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF2D0FD25AEA5B300126B97 /* Debug */,
+				0DF2D0FE25AEA5B300126B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DF2D0FF25AEA5B300126B97 /* Build configuration list for PBXNativeTarget "wenote-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF2D10025AEA5B300126B97 /* Debug */,
+				0DF2D10125AEA5B300126B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DF2D0C725AEA5B000126B97 /* Project object */;
+}

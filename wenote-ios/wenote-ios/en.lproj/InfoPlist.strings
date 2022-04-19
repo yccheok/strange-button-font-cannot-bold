@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  wenote-ios
+
+  Created by Yan Cheng Cheok on 27/07/2021.
+  
+*/
+
+"CFBundleDisplayName" = "WeNote";
+
+"NSCameraUsageDescription" = "Take photo as attachment";

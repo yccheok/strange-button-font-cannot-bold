@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D62" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="NSAttachment" representedClassName="NSAttachment" syncable="YES">
+        <attribute name="checksum" optional="YES" attributeType="String"/>
+        <attribute name="directoryValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="height" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="kindValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="mimeType" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="order" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="size" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="width" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <relationship name="plainNote" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="NSPlainNote" inverseName="attachments" inverseEntity="NSPlainNote"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSContent" representedClassName="NSContent" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="liteBodySorting" optional="YES" attributeType="String"/>
+        <attribute name="searchedString" optional="YES" attributeType="String"/>
+        <relationship name="plainNote" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="NSPlainNote" inverseName="content" inverseEntity="NSPlainNote"/>
+    </entity>
+    <entity name="NSImaginaryUuid" representedClassName="NSImaginaryUuid" syncable="YES">
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSPassword" representedClassName="NSPassword" syncable="YES">
+        <attribute name="kindValue" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="syncedTimestamp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="value" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSPasswordRecoveryEmail" representedClassName="NSPasswordRecoveryEmail" syncable="YES">
+        <attribute name="syncedTimestamp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="value" attributeType="String"/>
+    </entity>
+    <entity name="NSPasswordRecoveryEmailTrash" representedClassName="NSPasswordRecoveryEmailTrash" syncable="YES">
+        <attribute name="syncedTimestamp" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="NSPlainNote" representedClassName="NSPlainNote" syncable="YES">
+        <attribute name="archived" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="bodyLength" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="checked" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="colorIndex" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="colorSorting" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="createdTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="customColor" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="kindValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="label" optional="YES" attributeType="String"/>
+        <attribute name="liteBody" optional="YES" attributeType="String"/>
+        <attribute name="locked" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="modifiedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="order" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="pinned" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="reminderActiveTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="reminderDayOfWeekBitwiseValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="reminderEndTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="reminderKindValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="reminderLastTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="reminderRepeatFrequency" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="reminderRepeatValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="reminderTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="sectionValue" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sticky" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="stickyIconValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="syncedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="trashed" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="trashedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="attachments" toMany="YES" deletionRule="Cascade" destinationEntity="NSAttachment" inverseName="plainNote" inverseEntity="NSAttachment"/>
+        <relationship name="content" maxCount="1" deletionRule="Cascade" destinationEntity="NSContent" inverseName="plainNote" inverseEntity="NSContent"/>
+        <relationship name="recordings" toMany="YES" deletionRule="Cascade" destinationEntity="NSRecording" inverseName="plainNote" inverseEntity="NSRecording"/>
+        <fetchIndex name="index_plain_note_sticky">
+            <fetchIndexElement property="sticky" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="index_plain_note_order">
+            <fetchIndexElement property="order" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="index_plain_note_label_order">
+            <fetchIndexElement property="label" type="Binary" order="ascending"/>
+            <fetchIndexElement property="order" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="index_plain_note_label">
+            <fetchIndexElement property="label" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSRecording" representedClassName="NSRecording" syncable="YES">
+        <attribute name="checksum" optional="YES" attributeType="String"/>
+        <attribute name="directoryValue" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="length" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="order" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="size" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="plainNote" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NSPlainNote" inverseName="recordings" inverseEntity="NSPlainNote"/>
+    </entity>
+    <entity name="NSTabInfo" representedClassName="NSTabInfo" syncable="YES">
+        <attribute name="colorIndex" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="customColor" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="kindValue" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="order" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="syncedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <fetchIndex name="index_tab_info_order">
+            <fetchIndexElement property="order" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSTabInfoTrash" representedClassName="NSTabInfoTrash" syncable="YES">
+        <attribute name="syncedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="NSTrash" representedClassName="NSTrash" syncable="YES">
+        <attribute name="syncedTimestamp" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="uuid" attributeType="UUID" usesScalarValueType="NO"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uuid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="NSAttachment" positionX="-45" positionY="144" width="128" height="179"/>
+        <element name="NSContent" positionX="-18" positionY="171" width="128" height="89"/>
+        <element name="NSImaginaryUuid" positionX="-36" positionY="144" width="128" height="44"/>
+        <element name="NSPassword" positionX="-45" positionY="144" width="128" height="89"/>
+        <element name="NSPasswordRecoveryEmail" positionX="-36" positionY="144" width="128" height="59"/>
+        <element name="NSPlainNote" positionX="-36" positionY="63" width="128" height="524"/>
+        <element name="NSRecording" positionX="-36" positionY="144" width="128" height="134"/>
+        <element name="NSTabInfo" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="NSTabInfoTrash" positionX="-45" positionY="144" width="128" height="59"/>
+        <element name="NSTrash" positionX="-45" positionY="144" width="128" height="59"/>
+        <element name="NSPasswordRecoveryEmailTrash" positionX="-36" positionY="144" width="128" height="44"/>
+    </elements>
+</model>
